@@ -51,7 +51,7 @@ class MensagemController extends Controller
                         ]);
 
         Mail::send('mails.mail', $data, function($message) {
-            $message->to('galenomod@gmail.com', 'Galeno')->subject('Mandaram mensagem parao site!');
+            $message->to('galenomod@gmail.com', 'Galeno')->subject('Mandaram mensagem para o site!');
         });
 
         return view('sucesso');
